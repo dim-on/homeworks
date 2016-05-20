@@ -1,0 +1,52 @@
+input {
+    border: 1px green dotted;
+}
+input[type=radio][checked] {
+    border: 1px yellow double;
+
+}
+.a_google:hover {
+    color: yellow !important;
+}
+form {
+    border: 1px red solid;
+    float :left;
+    width: 50%;
+    color:black;
+
+}
+#new_window {
+    border: 1px darkgray solid;
+    float :left;
+    width : 50%;
+}
+main section div {
+    float: left;
+    width: 24%;
+}
+main section div img {
+    width: 80%;
+}
+main section {
+    width: 100%;
+}
+footer ul {
+    margin: auto;
+}
+footer ul li {
+    text-align: center;
+    width: 30%;
+    display: inline;
+}
+div:hover img {
+    border: #ff3a44 double 1px;
+}
+nav ul li {
+    display: inline;
+    text-align: left;
+    font-size: 18px;
+}
+nav ul, footer ul {
+    text-align: center;
+    font-weight: bold;
+}
