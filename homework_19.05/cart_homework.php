@@ -4,12 +4,6 @@
     }
 </style>
 <?php
-/**
- * Created by PhpStorm.
- * User: rus
- * Date: 18.05.16
- * Time: 19:19
- */
     //инициализация переменных
     $summa = $rowNumber = 0;
     $textTable = '';
@@ -25,86 +19,43 @@
     //ниже формирование шапки таблицы и вывод нижней границы шапки
     $textTable .= COL_LINE . "#". COL_LINE . "Name". COL_LINE . " Цена ". COL_LINE . "Количество ". COL_LINE . "Сумма ". COL_LINE . "<br>" . PHP_EOL;
     $textTable .= LINE_HEADS;
-
-    //ниже данные о товаре IPhone
-    $tovar = 'iPhone _';//наименование
-    $costTovar = 'sdsd' + 25500;// стоимость (что такое sdsd?)
-    $countTovar = 1;//количество
-    $available   = false;//наличие
-
-    //ниже вычисление суммы
-    $summa = $costTovar*$countTovar;
-    //ниже формирование порядкового номера
-    $rowNumber++;
-    //ниже инициализация и формирование значения переменной текста доступности на складе
-    //через тернарный оператор
-    $textAvailable = 'товар ' . ($available ? ' готово к отгрузке' : 'ждем поставки');
-
-    //ниже формирование строки товара Iphone
-    $textTable .= COL_LINE . $rowNumber. COL_LINE . $tovar . COL_LINE . $costTovar . COL_LINE . " $countTovar". COL_LINE . $costTovar*$countTovar . COL_LINE . $textAvailable . "<br>";
-
-    //ниже данные о товаре fmModule
-    $tovar = '   fmModule         _';
-    $costTovar = 1500;
-    $countTovar = 10;
-    $available   = true;
-
-    $summa += $costTovar*$countTovar;
-    $rowNumber++;
-
-    //ниже инициализация и формирование значения текста переменной доступности на складе
-    //через switch
-    switch ($available) {
-        case (true): {
-            $textAvailable = ' готово к отгрузке';
-            break;
-
+    echo $textTable;
+    
+    for ($a=0; $a<=4; $a++) {
+        switch ($a) {
+            case 1:
+                $tovar = 'iPhone _';
+                $costTovar = 'sdsd' + 25500;// стоимость (что такое sdsd?)
+                $countTovar = 1;//количество
+                $available   = false;//наличие
+                $summa = $costTovar*$countTovar;
+                $rowNumber++;
+                $textAvailable = 'наличие: ' . ($available ? ' готово к отгрузке' : 'ждем поставки');
+                echo $textTable = COL_LINE . $rowNumber. COL_LINE . $tovar . COL_LINE . $costTovar . COL_LINE . " $countTovar". COL_LINE . $costTovar*$countTovar . COL_LINE . $textAvailable . "<br>";
+                break;
+            case 2:
+                $tovar = '   fmModule         _';
+                $costTovar = 1500;
+                $countTovar = 10;
+                $available   = true;
+                $summa += $costTovar*$countTovar;
+                $rowNumber++;
+                $textAvailable = 'наличие: ' . ($available ? ' готово к отгрузке' : 'ждем поставки');
+                echo $textTable = COL_LINE . $rowNumber. COL_LINE . $tovar . COL_LINE . $costTovar . COL_LINE . " $countTovar". COL_LINE . $costTovar*$countTovar . COL_LINE . $textAvailable . "<br>";
+                break;
+            case 3:
+                $tovar = '   packet          _';
+                $costTovar = 15;
+                $countTovar = 11;
+                $available   = True;
+                $summa += $costTovar*$countTovar;
+                $rowNumber++;
+                $textAvailable = 'наличие: ' . ($available ? ' готово к отгрузке' : 'ждем поставки');
+                echo $textTable = COL_LINE . $rowNumber. COL_LINE . $tovar . COL_LINE . $costTovar . COL_LINE . " $countTovar". COL_LINE . $costTovar*$countTovar . COL_LINE . $textAvailable . "<br>";
+                break;
+            case 4:
+                echo $textTable = LINE_HEADS . COL_LINE . "Общая сумма заказа = $summa";
         }
-        case 0:
-        {
-            $textAvailable = 'ждем поставки';
-            break;
-
-        }
-        default:
-            $textAvailable = 'непонятно где';
-
     }
 
-    //ниже формирование строки товара fmModule
-    $textTable .= COL_LINE . $rowNumber. COL_LINE . $tovar . COL_LINE . $costTovar . COL_LINE . " $countTovar". COL_LINE . $costTovar*$countTovar . COL_LINE . $textAvailable ."<br>";
 
-    $tovar = '   packet          _';
-
-    $costTovar = 15;
-    $countTovar = 11;
-    $available   = True;
-
-    $summa += $costTovar*$countTovar;
-    $rowNumber++;
-if ($available)
-    $textAvailable = ' готово к отгрузке';
-else
-    $textAvailable = 'ждем поставки';
-
-$textTable .= COL_LINE . "$rowNumber". COL_LINE . $tovar . COL_LINE . $costTovar . COL_LINE . " $countTovar". COL_LINE . $costTovar*$countTovar. COL_LINE . $textAvailable  ."<br>";
-
-$textTable .= COL_LINE . "Общая сумма заказа = $summa";
-
-echo (print $textTable);
-
-
-for( $i = 0; $i++; $i < 3)
-{
-    if ($available)
-        $textAvailable = ' готово к отгрузке';
-    else
-        $textAvailable = 'ждем поставки';
-
-    $textTable .= COL_LINE . "$rowNumber". COL_LINE . $tovar . COL_LINE . $costTovar . COL_LINE . " $countTovar". COL_LINE . $costTovar*$countTovar. COL_LINE . $textAvailable  ."<br>";
-
-}
-//test почему-то не отображается?
-for ($a = 1; $a <= 3; $a++) {
-    echo $a;
-}
