@@ -1,0 +1,53 @@
+section {
+    font-family: Calibri, serif;
+    font-size: 20px;
+    color: darkblue;
+    margin: auto;
+    width: 70%;
+    height: auto;
+}
+#basic-info {
+    position: relative;
+    float: left;
+}
+#cv_photo {
+    position: relative;
+    float: right;
+}
+#name {
+    font-size: 30px;
+}
+#basic-info-list {
+    font-style: Italic;
+}
+div {
+    overflow: auto;
+}
+#list-of-jobs li {
+    border-bottom: solid;
+    border-color: darkblue;
+    font-weight: bold;
+}
+.duration {
+    width: 30%;
+    position: relative;
+    float: left;
+}
+.description {
+    width: 70%;
+    position: relative;
+    border-bottom: solid;
+    border-color: darkblue;
+    text-align: justify;
+}
+.company {
+    font-weight: bold;
+    font-style: italic;
+}
+p {
+    padding-left: 2px;
+}
+.secondary-list li {
+    border-bottom: none !important;
+    font-weight: normal !important;
+}
