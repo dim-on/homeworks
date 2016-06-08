@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 <body>
 <section>
     <!--Name+Basic Info+Photo-->
-    <div>
+    <!--<div>
         <div id="basic-info">
             <h2 id="name">Панов Дмитрий Сергеевич</h2>
             <ul id="basic-info-list">
@@ -23,7 +23,7 @@
         </div>
     </div>
     <!--Education+Jobs-->
-    <div>
+    <!--<div>
         <ul id="list-of-jobs">
             <li>Образование</li>
             <div class="duration">
@@ -38,17 +38,17 @@
             <li>Опыт работы</li>
 <?php
 include_once 'variables.php';
+    //global $duration;
+    //global $description;
+    print_r($duration);
+    print_r($desc);
+    /**function printExperience () {
 
-        foreach ($experience as $key=>$value) {
-            echo $key;
-            echo $value;
-        }
+    }*/
 
-//echo $duration1.'<br>'.$description1.'<br>'.$duration2.'<br>'.$description2.'<br>'.$duration3.'<br>'.$description3.'<br>';
-//echo $duration4.'<br>'.$description4.'<br>'.$duration5.'<br>'.$description5.'<br>'.$duration6.'<br>'.$description6.'<br>';
 ?>
 <!--Additional Info -->
-                <li>Профессиональные навыки:</li>
+                <!--<li>Профессиональные навыки:</li>
                 <p>
                 <ul class="secondary-list">
                     <li>Уверенный пользователь ПК (AutoCAD, Windows, MS Office, 1C …)</li>

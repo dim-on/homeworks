@@ -7,11 +7,11 @@
 </head>
 <?php
 //Experience
-$duration1='<div class="duration">
+$duration[]='<div class="duration">
                     <p class="company">ООО «ТД «Укрросимпекс»</p>
                     <p>Октябрь 2013 – настоящее время</p>
            </div>';
-$description1='<div class="description">
+$description[]='<div class="description">
                     <p><i>Должность:</i> главный инженер<br>
                         <i>Должностные обязанности:</i> расчет, проектирование и строительство систем
                         антиобледенения и снеготаяния на базе электрических нагревательных кабелей.
@@ -21,12 +21,12 @@ $description1='<div class="description">
                         Проверка работоспособности и пуско-наладка системы.
                     </p>
                 </div>';
-$duration2='</div>
+$duration[]='</div>
                 <div class="duration">
                     <p class="company">ООО «Разумный Дом</p>
                     <p>Сентябрь 2012 – Февраль 2013</p>
                 </div>';
-$description2='<div class="description">
+$description[]='<div class="description">
                     <p><i>Должность:</i> руководитель проектов<br>
                         <i>Должностные обязанности:</i> реализация проектов по строительству систем антиобледенения и
                         снеготаяния на базе электрических нагревательных кабелей. Взаимодействие с заказчиком и
@@ -35,11 +35,11 @@ $description2='<div class="description">
                         выполненных работ.
                     </p>
                 </div>';
-$duration3='<div class="duration">
+$duration[]='<div class="duration">
                     <p class="company">ООО «Сикам Украина»</p>
                     <p>Апрель 2011 – Июль 2012</p>
                 </div>';
-$description3='<div class="description">
+$description[]='<div class="description">
                     <p><i>Должность:</i> бренд-менеджер, руководитель направления «Кабельные наконечники и инструмент»<br>
                     <i>Должностные обязанности:</i> развитие и продвижение нового бренда на территории Украины, проведение
                         презентаций и технических консультаций, составление инструкций по эксплуатации, подготовка
@@ -47,11 +47,11 @@ $description3='<div class="description">
                         отчетность, анализ конкурентов, формирование ценовой политики и ассортимента продукции.
                     </p>
                 </div>';
-$duration4='<div class="duration">
+$duration[]='<div class="duration">
                     <p class="company">ERAI Украина</p>
                     <p>Февраль 2010 – Январь 2011</p>
                 </div>';
-$description4='<div class="description">
+$description[]='<div class="description">
                     <p><i>Должность:</i> технико - коммерческий специалист промышленного сектора<br>
                         <i>Должностные обязанности:</i> представление интересов промышленных французских предприятий на
                         территории Украины. Региональный представитель на территории Украины и России компании
@@ -61,11 +61,11 @@ $description4='<div class="description">
                         рынка сбыта, подготовка каталогов и рекламной продукции.
                     </p>
                 </div>';
-$duration5='<div class="duration">
+$duration[]='<div class="duration">
                     <p class="company">ООО «Радиокомплект»</p>
                     <p>Декабрь 2005 – Январь 2010</p>
                 </div>';
-$description5='<div class="description">
+$description[]='<div class="description">
                     <p><i>Должность:</i>ведущий специалист по проектам отдела щитового оборудования<br>
                         <i>Должностные обязанности:</i> активный поиск проектов по электроснабжению и вентиляции,
                         калькуляция стоимости щитового оборудования с последующим его производством и продажей в
@@ -75,18 +75,17 @@ $description5='<div class="description">
                         ввод систем в эксплуатацию, ведение переговоров с заказчиком.
                     </p>
                 </div>';
-$duration6='<div class="duration">
+$duration[]='<div class="duration">
                     <p class="company">ЧП «Промэлектро»</p>
                     <p>Июль 2004 – Август 2005</p>
                 </div>';
-$description6='<div class="description" style="border-bottom: none">
+$description[]='<div class="description" style="border-bottom: none">
                     <p><i>Должность:</i>инженер-электрик отдела продаж и технической поддержки<br>
                         <i>Должностные обязанности:</i> закупка и пассивная продажа электротехнической продукции,
                         организация логистики, ведение склада, документооборот с покупателями и поставщиками,
                         техническая консультация, расчет стоимости электрических щитов, сборка щитового оборудования.
                     </p>
                 </div>';
-$experience=array($duration1=>$description1, $duration2=>$description2, $duration3=>$description3, $duration4=>$description4, $duration5=>$description5, $duration6=>$description6);
-
-//echo $duration1.'<br>'.$description1.'<br>'.$duration2.'<br>'.$description2.'<br>'.$duration3.'<br>'.$description3.'<br>';
-//echo $duration4.'<br>'.$description4.'<br>'.$duration5.'<br>'.$description5.'<br>'.$duration6.'<br>'.$description6.'<br>';
+$dur=$duration;
+$desc=$description;
+print_r($dur);
