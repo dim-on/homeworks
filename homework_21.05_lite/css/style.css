@@ -1,0 +1,9 @@
+body {
+    font-family: Arial;
+}
+table {
+    border: 2px #ff3a44;
+}
+table tbody td:nth-child(1n+3) {
+    text-align: right;
+}
