@@ -1,5 +1,5 @@
 <?php
-$day=5;
+$day=10;
     switch ($day) {
         case ($day >= 1 && $day <= 5):
             echo 'It&#39s a working Day!';
@@ -9,5 +9,5 @@ $day=5;
             break;
         default:
             echo 'Undefined Day!';
-            break;
+            //break;
     }

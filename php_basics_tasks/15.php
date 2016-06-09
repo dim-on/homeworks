@@ -1,6 +1,6 @@
 <?php
 $a=40;
-$b=0;
+$b=6;
 $operator='/';
     if ($b==0&&$operator=='/') {
         echo 'Error';
