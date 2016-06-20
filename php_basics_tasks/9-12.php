@@ -1,10 +1,25 @@
 <?php
-$day=10;
+$day=1;
     switch ($day) {
-        case ($day >= 1 && $day <= 5):
+        case (1):
             echo 'It&#39s a working Day!';
             break;
-        case ($day >= 6 && $day <= 7):
+        case (2):
+            echo 'It&#39s a working Day!';
+            break;
+        case (3):
+            echo 'It&#39s a working Day!';
+            break;
+        case (4):
+            echo 'It&#39s a working Day!';
+            break;
+        case (5):
+            echo 'It&#39s a working Day!';
+            break;
+        case (6):
+            echo 'It&#39s a Holiday!';
+            break;
+        case (7):
             echo 'It&#39s a Holiday!';
             break;
         default:
