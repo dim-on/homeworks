@@ -24,8 +24,8 @@ echo '<br>';
             for ($i=0;$i<count($product);$i++) {
                 echo BEGIN_ROW . ($i+1) . COL_LINE . $product[$i][0] . COL_LINE . $product[$i][1] . COL_LINE . $product[$i][2] . END_ROW;
             }
+$connect=my
 ?>
 </table>
-
 
     
